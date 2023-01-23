@@ -4,12 +4,15 @@ Este é um serviço de back-end desenvolvido para gerenciar uma imobiliária. El
 ## Recursos
 - Gerenciamento de imóveis (cadastro, edição, exclusão)
 - Gerenciamento de clientes (cadastro, edição, exclusão)
-- Gerenciamento de vendas (registro de vendas, geração de relatórios)
+- Gereciamento de agendamento a imoveis(cadastro)
 
 ## Instalação sem usar Docker
 Para instalar este serviço sem usar Docker, você precisará ter o Node.js e o npm (gerenciador de pacotes do Node) instalados.
 
-- Clone este repositório para sua máquina: git clone https://github.com/seu-usuario/imobiliaria-backend.git
+- Clone este repositório para sua máquina: 
+```
+git clone git@github.com:fjrjdev/imobiliaria-backend.git
+```
 - Entre na pasta do projeto: cd imobiliaria-backend
 - Instale as dependências: npm install ou yarn install
 - Configure as suas credenciais do banco de dados no arquivo .env
@@ -20,7 +23,10 @@ Para instalar este serviço sem usar Docker, você precisará ter o Node.js e o 
 ## Instalação usando Docker
 Para instalar este serviço usando Docker, você precisará ter o Docker e o Docker Compose instalados em sua máquina.
 
-- Clone este repositório para sua máquina: git clone https://github.com/seu-usuario/imobiliaria-backend.git
+- Clone este repositório para sua máquina: 
+```
+git clone git@github.com:fjrjdev/imobiliaria-backend.git
+```
 - Entre na pasta do projeto: cd imobiliaria-backend
 - Configure as suas credenciais do banco de dados no arquivo docker-compose.yml
 - Execute o comando docker-compose build para criar a imagem do projeto
@@ -153,9 +159,9 @@ Resposta:
 
 ```
 Respostas de Erro
-400 Bad Request: Dados inválidos fornecidos
-409 Conflict: Endereço já em uso
-401 Unauthorized: Acesso negado, somente administradores podem acessar esta rota
+- 400 Bad Request: Dados inválidos fornecidos
+- 409 Conflict: Endereço já em uso
+- 401 Unauthorized: Acesso negado, somente administradores podem acessar esta rota
 
 
 
